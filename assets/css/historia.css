@@ -1,0 +1,46 @@
+#historia {
+    display: flex;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+.historia-card {
+    display: flex;
+    width: 100%;
+    height: 27.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.historia-card .conteudo-historia {
+  display: flex;
+  margin-right: 75px;
+  margin-left: 75px;
+  width: 262.625rem;
+  height: 27.5rem;
+  padding: 1.25rem 1.875rem;
+  justify-content: space-around;
+}
+
+.historia-card .conteudo-historia {
+    display: flex;
+    gap: 10rem;
+    justify-content:center ;
+}
+
+.historia-card .conteudo-historia .quem{
+    display: flex;
+    width: 28rem;
+    flex-direction: column;
+}
+
+.historia-card .conteudo-historia span {
+    text-align: start;
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+

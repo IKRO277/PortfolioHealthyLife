@@ -1,0 +1,96 @@
+
+
+.carousel-item {
+    display: flex;
+    height: 500px;
+  }
+  
+  
+  .conteudo-slide{
+    margin-top: 3rem;
+  }
+  
+  .carousel-item h2{
+    text-align: center;
+    justify-content: center;
+    margin-top: 3.125rem;
+    font-family: 'Neue Machima';
+  }
+  
+  .carousel-item p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-family: 'Inclusive Sans', sans-serif;
+    width: 24rem;
+  }
+  
+  .carrossel-img {
+    margin-left: 4rem;
+    width: 80%;
+    height: auto;
+    animation: flutuante 3s ease-in-out infinite;
+  }
+  
+  .carrossel-img2 {
+    margin-left: 10rem;
+    width: 65%;
+    height: auto;
+    animation: flutuante 3s ease-in-out infinite;
+  }
+  
+  .carousel-item .mensagem{
+    background: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 25px #AED8CC;
+  }
+  
+  .carousel-item-1 {
+    background: url(../img/gradient1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .carousel-item-2 {
+    background: url(../img/gradient2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .carousel-item-3 {
+    background: url(../img/gradient3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .slide1 {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide1_1 {
+    width: 60%;
+    height: auto;
+    margin-left: 4rem;
+    width: 80%;
+    height: auto;
+    animation: flutuante 3s ease-in-out infinite;
+  }
+  
+  .slide2 {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes flutuante {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }

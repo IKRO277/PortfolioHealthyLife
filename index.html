@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HealthyLife</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/caurrosel.css" />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <link rel="stylesheet" href="assets/css/development.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/historia.css" />
   </head>
   <body>
     <!--Barra de Navegação-->
@@ -41,9 +47,19 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Desenvolvedores</a>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navegacao">Objetivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navegacao2">Histórico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navegacao3">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rodape">Contato</a>
+          </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -63,167 +79,390 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#cadastroModal"
-                >Cadastre-se</a
-              >
-            </li>
           </ul>
-            <button class="btn btn-outline-success navbar-brand login" href="#" type="submit" data-bs-target="#cadastroModal" data-bs-toggle="modal" >
+            <button class="btn navbar-brand login btn10" href="#" type="submit" data-bs-target="#cadastroModal" data-bs-toggle="modal" >
               Login
             </button>
         </div>
       </div>
     </nav>
     <!--Código Main-->
-    <main>
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
+    <main id="inicio">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active carousel-item-1">
-            <p>Texto</p>
+          <div class="carousel-item active carousel-item-1 row g-0" data-bs-interval="7000">
+            <div class="conteudo-slide row g-0">
+              <div class="col slide1 container-fluid">
+                <img class="img-fluid carrossel-img" src="assets/img/slides/carrossel1.png" alt="">
+              </div>
+              <div class="col slide2">
+                <h2 class="fs-1 mx-auto">Querendo explorar seu negócio?</h2>
+                  <div class="flex mt-5">
+                    <div class="mensagem bg-opacity-25 mx-auto">
+                      <p class="text-center lh-lg mx-auto">Nós temos a solução que vai impulsionar seus objetivos, tornando cada passo 
+                          do seu caminho mais eficiente e promissor. Deixe-nos ajudar a sua empresa a alcançar o sucesso que ela merece</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item carousel-item-2">
-            <p>texto</p>
+
+          <div class="carousel-item carousel-item-2 row g-0" data-bs-interval="7000">
+            <div class="conteudo-slide row g-0">
+              <div class="col slide1 container-fluid">
+                <img class="img-fluid carrossel-img" src="assets/img/slides/carrossel2.png" alt="">
+              </div>
+              <div class="col slide2">
+                <h2 class="fs-1 mx-auto">Performe sua empresa</h2>
+                <div class="flex mt-5">
+                  <div class="mensagem bg-opacity-25 mx-auto">
+                    <p class="text-center lh-lg mx-auto"> Sua jornada rumo ao sucesso é agora mais ágil e confiável do que nunca.
+                      Adquira rapidamente um sistema altamente eficiente e confiável para impulsionar seus resultados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item carousel-item-3">
-            <p>Texto</p>
+
+          <div class="carousel-item carousel-item-3 row g-0" data-bs-interval="7000">
+            <div class="conteudo-slide row g-0">
+              <div class="col slide1 container-fluid">
+                <img class="img-fluid carrossel-img2" src="assets/img/slides/carrossel3.2.png" alt="">
+              </div>
+              <div class="col slide2">
+                <h2 class="fs-1 mx-auto">Vamos trabalhar juntos?</h2>
+                <div class="flex mt-5">
+                  <div class="mensagem bg-opacity-25 mx-auto">
+                    <p class="text-center lh-lg mx-auto">
+                      Contate-nos e buscaremos a melhor solução para atender a todas as suas necessidades. 
+                      Nossa equipe dedicada está pronta para oferecer expertise e assistência personalizada</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+        <!--Cards-->
+        <div id="navegacao"></div>
+    <span id="objetivos">Valores e Objetivos</span>
+    <section class="typeface">
+      <!--OBJETIVOS-->
+      <div class="typeface-conteudo">
+        <div class="valores">
+          <h2>Valores fundamentais</h2>
+          <ul>
+            <li>Transparência</li>
+            <li>Inovação</li>
+            <li>Democratização da informação</li>
+            <li>Ética</li>
+            <li>Personalização</li>
+            <hr>
+          </ul>
+        </div>
+        <div class="valores">
+          <h2>Objetivos da Equipe</h2>
+          <ul>
+            <li>Alcançar o público alvo</li>
+            <li>Zelar pelos valores fundamentais</li>
+            <li>Boa produtividade</li>
+            <li>Crescimento progressivo</li>
+            <li>Destacar-se no mercado</li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="navegacao2"></div>
+      <span id="historia">História</span>
+      <div class="historia-card">
+        <div class="conteudo-historia">
+          <img src="assets/img/3d.jpg" alt="">
+          <div class="quem">
+            <span>Quem Somos ?</span>
+            <hr>
+            <p>
+              Uma equipe do terceiro ano do Curso Técnico de Informática do Instituto Federal de Roraima, que é fruto de um 
+              projeto de conclusão de curso. Composta por 7 integrantes divididos entre líder, designer, desenvolvedores e o 
+              responsável pelo marketing.
+            </p>
+            <p>
+              Todos com o objetivo de colocar em prática uma ideia pensada no primeiro semestre de
+              2023, ideia essa que será não apenas para fins de avaliação, mas que também visa facilitar o cotidiano de 
+              determinado público através do uso da tecnologia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Desenvolvedores-->
+    <div id="navegacao3"></div>
+    <span id="desenvolvedores">
+      Integrantes da equipe
+    </span>
+    <section class="desenvolvedores-conteudo">
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/sardinha.jpeg')"></div>
+            <img class="card-avatar" src="assets/img/profile/sardinha.jpeg" alt="avatar" />
+            <h1 class="card-fullname">Davi Sardinha</h1>
+            <h2 class="card-jobtitle">CEO/Founder</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Atual líder e CEO da equipe HealthyLife, em busca de novas possibilidades no mercado
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/ikro.png')"></div>
+            <img class="card-avatar" src="assets/img/profile/ikro.png" alt="avatar" />
+            <h1 class="card-fullname">Icaro D. Paula</h1>
+            <h2 class="card-jobtitle">Front development</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Atual desenvolvedor da HealthyLife, em busca de melhorar sua experiência profissional
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="desenvolvedores-conteudo">
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/monteiro.jpg')"></div>
+            <img class="card-avatar" src="assets/img/profile/monteiro.jpg" alt="avatar" />
+            <h1 class="card-fullname">Mateus Monteiro</h1>
+            <h2 class="card-jobtitle">UI/UX Designer</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Atual designer da HealthyLife, trabalhando para desenvolver nossa identidade como equipe de desenvolvimento
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/louisa.jpeg')"></div>
+            <img class="card-avatar" src="assets/img/profile/louisa.jpeg" alt="avatar" />
+            <h1 class="card-fullname">Heloisa Quadros</h1>
+            <h2 class="card-jobtitle">XXX</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, explicabo dicta? Architecto esse vel 
+                  ut modi necessitatibus reprehenderit repellendus consequuntur sequi quae unde, in nobis ducimus ea officiis, qui quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/duda.jpg')"></div>
+            <img class="card-avatar" src="assets/img/profile/duda.jpg" alt="avatar" />
+            <h1 class="card-fullname">Eduara Cristina</h1>
+            <h2 class="card-jobtitle">XXX</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, explicabo dicta? Architecto esse vel 
+                  ut modi necessitatibus reprehenderit repellendus consequuntur sequi quae unde, in nobis ducimus ea officiis, qui quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="desenvolvedores-conteudo">
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/default.png')"></div>
+            <img class="card-avatar" src="assets/img/profile/default.png" alt="avatar" />
+            <h1 class="card-fullname">Braian Panzenhagem</h1>
+            <h2 class="card-jobtitle">XXX</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, explicabo dicta? Architecto esse vel 
+                  ut modi necessitatibus reprehenderit repellendus consequuntur sequi quae unde, in nobis ducimus ea officiis, qui quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards-desenvolvedores">
+        <div class="card-conteudo" data-state="#about">
+          <div class="card-header">
+            <div class="card-cover" style="background-image: url('assets/img/profile/default.png')"></div>
+            <img class="card-avatar" src="assets/img/profile/default.png" alt="avatar" />
+            <h1 class="card-fullname">Higo Teylo</h1>
+            <h2 class="card-jobtitle">XXX</h2>
+          </div>
+          <div class="card-main">
+            <div class="card-section is-active" id="about">
+              <div class="card-content">
+                <div class="card-subtitle">Sobre</div>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, explicabo dicta? Architecto esse vel 
+                  ut modi necessitatibus reprehenderit repellendus consequuntur sequi quae unde, in nobis ducimus ea officiis, qui quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
-    <!--Modals-->
+    <footer id="rodape">
+      <div id="navegacao4"></div>
+      <div class="rodape1">
+        <img src="assets/img/logo_equipe.png" alt="">
+      </div>
+      <div class="rodape2">
+        <span>Redes Sociais</span>
+        <div class="redes">
+          <a href=""><img src="assets/img/icons/insta.svg" alt="" class="insta"></a>
+          <a href=""><img src="assets/img/icons/email.svg" alt="" class="insta"></a>
+          <a href=""><img src="assets/img/icons/face.svg" alt="" class="face"></a>
+        </div>
+      </div>
+    </footer>
+        <!--Modals-->
     <div
-      class="modal fade"
-      id="cadastroModal"
-      role="dialog"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Cadastre-se agora
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="inserirNomeCompleto" class="form-label"
-                  >Nome Completo</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inserirNomeCompleto"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  Exemplo: Davi Sardinha Rodrigues
+        class="modal fade"
+        id="cadastroModal"
+        role="dialog"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Cadastre-se agora
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="inserirNomeCompleto" class="form-label"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inserirNomeCompleto"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    Exemplo: Davi Sardinha Rodrigues
+                  </div>
                 </div>
-              </div>
-              <div class="mb-3">
-                <label for="inserirEmail" class="form-label">Email</label>
-                <input type="password" class="form-control" id="inserirEmail" />
-                <div id="emailHelp" class="form-text">
-                  Exemplo: teste@exemplo.com
+                <div class="mb-3">
+                  <label for="inserirEmail" class="form-label">Email</label>
+                  <input type="password" class="form-control" id="inserirEmail" />
+                  <div id="emailHelp" class="form-text">
+                    Exemplo: teste@exemplo.com
+                  </div>
                 </div>
-              </div>
-              <div class="mb-3">
-                <label for="inserirEmail" class="form-label">Telefone</label>
-                <input
-                  type="number"
-                  class="form-control no-spinners"
-                  id="inserirEmail"
-                />
-                <div id="emailHelp" class="form-text">
-                  Exemplo: XX-XXXXX-XXXX
+                <div class="mb-3">
+                  <label for="inserirEmail" class="form-label">Telefone</label>
+                  <input
+                    type="number"
+                    class="form-control no-spinners"
+                    id="inserirEmail"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    Exemplo: XX-XXXXX-XXXX
+                  </div>
                 </div>
-              </div>
-              <select class="form-select" aria-label="Default select example">
-                <option selected disabled>
-                  Pessoa Física ou Pessoa Jurídica ?
-                </option>
-                <option value="1">Pessoa Física</option>
-                <option value="2">Pessoa Jurídica</option>
-              </select>
-            </form>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>
+                    Pessoa Física ou Pessoa Jurídica ?
+                  </option>
+                  <option value="1">Pessoa Física</option>
+                  <option value="2">Pessoa Jurídica</option>
+                </select>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Voltar
+              </button>
+              <button type="button" class="btn btn-primary">Cadastrar</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Voltar
-            </button>
-            <button type="button" class="btn btn-primary">Cadastrar</button>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="conteudo-do-card">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="card" >
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="card" >
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="assets/js/vanila-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".cards-desenvolvedores"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare":1
+      });
+    </script>
+    <script src="assets/js/babel.js"></script>
   </body>
 </html>
