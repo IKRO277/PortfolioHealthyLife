@@ -51,6 +51,7 @@
   padding: 1.25rem 1.875rem;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .typeface span {

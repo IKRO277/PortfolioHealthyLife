@@ -15,15 +15,21 @@
     height: 27.5rem;
     margin-bottom: 1.7rem;
 }
+.historia-card img {
+    display: flex;
+    width: 30rem;
+    height: 20rem;
+}
 
 .historia-card .conteudo-historia {
   display: flex;
-  margin-right: 75px;
-  margin-left: 75px;
+  margin-right: 4.688px;
+  margin-left: 4.688px;
   width: 262.625rem;
   height: 27.5rem;
   padding: 1.25rem 1.875rem;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .historia-card .conteudo-historia {
